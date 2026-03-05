@@ -1,4 +1,4 @@
-// App.jsx - Complete Working Version
+// App.jsx - Complete Working Version with Image Fixes
 import { useState, useEffect, useRef } from 'react'
 import './styles.css'
 
@@ -272,7 +272,18 @@ function Nav() {
   },[])
   return (
     <nav className={scrolled?'scrolled':''}>
-      <div className="nav-logo"><b>[</b>Allen.R<b>]</b><span className="blink">_</span></div>
+      <div className="nav-logo">
+        <img 
+          src="/src/assets/Professional persona.png" 
+          alt="AR" 
+          className="nav-logo-img"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextSibling.style.display = 'block';
+          }}
+        />
+        <span className="nav-logo-fallback"><b>[</b>Allen.R<b>]</b><span className="blink">_</span></span>
+      </div>
       <ul className={`nav-links${open?' open':''}`}>
         {NAV_LINKS.map(([href,lbl])=>(
           <li key={href}><a href={href} className={active===href.slice(1)?'active':''} onClick={()=>setOpen(false)}>{lbl}</a></li>
@@ -332,7 +343,7 @@ function Hero() {
         </div>
         <div className="hero-btns">
           <a href="#projects" className="btn btn-cyan">🚀 View Projects</a>
-          <<a href="/Allen_Ronaldo_Resume.pdf" className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
+          <a href="/src/assets/Allen_Ronaldo_Resume (1).pdf" className="btn btn-outline" target="_blank" rel="noreferrer" download>📄 Download Resume</a>
           <a href="#contact" className="btn btn-ghost">📬 Contact Me</a>
         </div>
         <div className="hero-pills">
@@ -348,12 +359,6 @@ function Hero() {
 
 /* ═══════════════════════════════════════════════════
    ABOUT
-═══════════════════════════════════════════════════ */
-/* ═══════════════════════════════════════════════════
-   ABOUT - UPDATED TO MATCH IMAGE
-═══════════════════════════════════════════════════ */
-/* ═══════════════════════════════════════════════════
-   ABOUT - WITH BOX-STYLE HIGHLIGHTS
 ═══════════════════════════════════════════════════ */
 function About() {
   const [imageError, setImageError] = useState(false);
@@ -404,11 +409,11 @@ function About() {
                 <div className="about-photo-inner">
                   {!imageError ? (
                     <img 
-  src="/photo.jpg"
-  alt="Allen Ronaldo C"
-  className="about-photo-img"
-  onError={() => setImageError(true)}
-/>
+                      src="/src/assets/1755326708636.jpg"
+                      alt="Allen Ronaldo C"
+                      className="about-photo-img"
+                      onError={() => setImageError(true)}
+                    />
                   ) : (
                     <div className="about-photo-placeholder">
                       <span className="about-photo-initials">AR</span>
@@ -436,8 +441,8 @@ function About() {
             </div>
 
             <div className="about-name-title">
-              <h3 className="about-name">AR</h3>
-              <p className="about-role">Your Photo Here</p>
+              <h3 className="about-name">Allen Ronaldo C</h3>
+              <p className="about-role">ECE Engineer | AI & IoT</p>
             </div>
 
             <div className="about-info-cards">
@@ -937,6 +942,15 @@ export default function App() {
   useFadeIn();
 
   useEffect(() => {
+    // Add favicon/logo
+    const link = document.querySelector("link[rel~='icon']") || document.createElement('link');
+    link.rel = 'icon';
+    link.href = '/src/assets/Professional persona.png';
+    document.head.appendChild(link);
+
+    // Add page title
+    document.title = 'Allen Ronaldo C | AI & IoT Engineer';
+
     // Simulate loading time - remove this in production and use actual load detection
     const timer = setTimeout(() => {
       setLoading(false);
