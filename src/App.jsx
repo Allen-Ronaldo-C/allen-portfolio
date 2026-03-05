@@ -2,7 +2,8 @@
 import { useState, useEffect, useRef } from 'react'
 import profileImage from "./assets/1755326708636.jpg";
 import logoImage from "./assets/Professional persona.png";
-import resumePDF from "./assets/Allen_Ronaldo_Resume.pdf";
+import resumePDF from "./assets/Allen_Ronaldo_Resume(1).pdf";
+import logo from "./assets/Professional persona.png";
 import './styles.css'
 
 /* ═══════════════════════════════════════════════════
