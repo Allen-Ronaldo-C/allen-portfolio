@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from 'react'
 import profileImage from "./assets/1755326708636.jpg";
 import logoImage from "./assets/Professional persona.png";
-import resumePDF from "./assets/Allen_Ronaldo_Resume(1).pdf";
 import logo from "./assets/Professional persona.png";
 import './styles.css'
 
@@ -345,12 +344,11 @@ function Hero() {
             </div>
           ))}
         </div>
-        <a
-  href={resumePDF}
+ <a
+  href="/Allen_Ronaldo_Resume.pdf"
   className="btn btn-outline"
   target="_blank"
   rel="noreferrer"
-  download
 >
 📄 Download Resume
 </a>
