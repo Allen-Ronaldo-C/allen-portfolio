@@ -348,6 +348,7 @@ function Hero() {
   className="btn btn-outline"
   target="_blank"
   rel="noreferrer"
+  download
 >
 📄 Download Resume
 </a>
