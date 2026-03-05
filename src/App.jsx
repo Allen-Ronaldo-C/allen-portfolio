@@ -332,7 +332,7 @@ function Hero() {
         </div>
         <div className="hero-btns">
           <a href="#projects" className="btn btn-cyan">🚀 View Projects</a>
-          <a href="\src\assets\Allen_Ronaldo_Resume (1).pdf" className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
+          <a href="src\assets\Allen_Ronaldo_Resume (1).pdf" className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
           <a href="#contact" className="btn btn-ghost">📬 Contact Me</a>
         </div>
         <div className="hero-pills">
@@ -404,7 +404,7 @@ function About() {
                 <div className="about-photo-inner">
                   {!imageError ? (
                     <img 
-                      src="\src\assets\1755326708636.jpg" 
+                      src="src\assets\1755326708636.jpg" 
                       alt="Allen Ronaldo C"
                       className="about-photo-img"
                       onError={() => setImageError(true)}
