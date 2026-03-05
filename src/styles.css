@@ -1241,5 +1241,30 @@ footer::before { content:''; position:absolute; top:0; left:50%; transform:trans
 .footer-bottom { display:flex; justify-content:space-between; font-family:var(--fm); font-size:.68rem; color:var(--dim); }
 @media(max-width:680px) { .footer-main{grid-template-columns:1fr} .footer-bottom{flex-direction:column;gap:.4rem;text-align:center} }
 
+/* Navbar logo styling */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo-img {
+  height: 32px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.nav-logo-fallback {
+  display: none;
+  font-family: var(--fd);
+  font-size: 1.2rem;
+  color: var(--cyan);
+  letter-spacing: 0.1em;
+}
+
+.nav-logo-fallback b {
+  color: var(--white);
+  font-weight: 400;
+}
 /* Utility */
 .blink { animation:blink 1s step-end infinite; }
