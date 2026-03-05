@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import profileImage from "./assets/1755326708636.jpg";
 import logoImage from "./assets/Professional persona.png";
+import resumePDF from "./assets/Allen_Ronaldo_Resume.pdf";
 import './styles.css'
 
 /* ═══════════════════════════════════════════════════
@@ -343,8 +344,8 @@ function Hero() {
             </div>
           ))}
         </div>
-        <a 
-  href="/Allen_Ronaldo_Resume.pdf"
+        <a
+  href={resumePDF}
   className="btn btn-outline"
   target="_blank"
   rel="noreferrer"
