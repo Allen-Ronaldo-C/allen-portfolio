@@ -1,5 +1,6 @@
 // App.jsx - Complete Working Version
 import { useState, useEffect, useRef } from 'react'
+import resume from "./assets/Allen_Ronaldo_Resume(1).pdf";
 import './styles.css'
 
 /* ═══════════════════════════════════════════════════
