@@ -1,5 +1,7 @@
 // App.jsx - Complete Working Version with Image Fixes
 import { useState, useEffect, useRef } from 'react'
+import profileImage from "./assets/1755326708636.jpg";
+import logoImage from "./assets/Professional persona.png";
 import './styles.css'
 
 /* ═══════════════════════════════════════════════════
@@ -341,11 +343,14 @@ function Hero() {
             </div>
           ))}
         </div>
-        <div className="hero-btns">
-          <a href="#projects" className="btn btn-cyan">🚀 View Projects</a>
-          <a href="/src/assets/Allen_Ronaldo_Resume (1).pdf" className="btn btn-outline" target="_blank" rel="noreferrer" download>📄 Download Resume</a>
-          <a href="#contact" className="btn btn-ghost">📬 Contact Me</a>
-        </div>
+        <a 
+  href="/Allen_Ronaldo_Resume.pdf"
+  className="btn btn-outline"
+  target="_blank"
+  rel="noreferrer"
+>
+📄 Download Resume
+</a>
         <div className="hero-pills">
           {['Python','YOLO','Raspberry Pi','React','OpenCV','Linux','Qiskit','IoT','NIR','Edge AI'].map(t=>(
             <span key={t} className="hero-pill">{t}</span>
@@ -409,11 +414,10 @@ function About() {
                 <div className="about-photo-inner">
                   {!imageError ? (
                     <img 
-                      src="/src/assets/1755326708636.jpg"
-                      alt="Allen Ronaldo C"
-                      className="about-photo-img"
-                      onError={() => setImageError(true)}
-                    />
+  src={profileImage}
+  alt="Allen Ronaldo C"
+  className="about-photo-img"
+/>
                   ) : (
                     <div className="about-photo-placeholder">
                       <span className="about-photo-initials">AR</span>
