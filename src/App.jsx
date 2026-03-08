@@ -1,7 +1,7 @@
 // App.jsx - Complete Working Version
 import { useState, useEffect, useRef } from 'react'
-import resumePDF from './assets/Allen_Ronaldo_Resume(1).pdf'
-import profilePhoto from './src/assets/1755326708636.jpg'
+import resumePDF from './assets/Allen_Ronaldo_Resume (1).pdf'
+import profilePhoto from './assets/Professional persona.png'
 import './styles.css'
 
 /* ═══════════════════════════════════════════════════
@@ -894,6 +894,7 @@ function Contact() {
     </section>
   )
 }
+
 
 /* ═══════════════════════════════════════════════════
    SCROLL TO TOP
