@@ -1,7 +1,5 @@
 // App.jsx - Complete Working Version
 import { useState, useEffect, useRef } from 'react'
-import resumePDF from './assets/Allen_Ronaldo_Resume (1).pdf'
-import profilePhoto from './assets/1755326708636.jpg'
 import './styles.css'
 
 /* ═══════════════════════════════════════════════════
@@ -334,7 +332,7 @@ function Hero() {
         </div>
         <div className="hero-btns">
           <a href="#projects" className="btn btn-cyan">🚀 View Projects</a>
-          <a href={resumePDF} className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
+          <a href="/Allen_Ronaldo_Resume.pdf" className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
           <a href="#contact" className="btn btn-ghost">📬 Contact Me</a>
         </div>
         <div className="hero-pills">
@@ -348,12 +346,6 @@ function Hero() {
   )
 }
 
-/* ═══════════════════════════════════════════════════
-   ABOUT
-═══════════════════════════════════════════════════ */
-/* ═══════════════════════════════════════════════════
-   ABOUT - UPDATED TO MATCH IMAGE
-═══════════════════════════════════════════════════ */
 /* ═══════════════════════════════════════════════════
    ABOUT - WITH BOX-STYLE HIGHLIGHTS
 ═══════════════════════════════════════════════════ */
@@ -406,7 +398,7 @@ function About() {
                 <div className="about-photo-inner">
                   {!imageError ? (
                     <img 
-                      src={profilePhoto} 
+                      src="/photo.png" 
                       alt="Allen Ronaldo C"
                       className="about-photo-img"
                       onError={() => setImageError(true)}
@@ -895,6 +887,9 @@ function Contact() {
   )
 }
 
+/* ═══════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════ */
 
 /* ═══════════════════════════════════════════════════
    SCROLL TO TOP
@@ -910,22 +905,19 @@ function ScrollToTop() {
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       style={{
-        position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 999,
-        width: '44px', height: '44px', borderRadius: '50%',
-        background: 'rgba(0,245,255,0.1)', border: '1px solid rgba(0,245,255,0.4)',
-        color: '#00f5ff', fontSize: '1.2rem', cursor: 'pointer',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        backdropFilter: 'blur(10px)', transition: 'all .2s',
-        boxShadow: '0 0 16px rgba(0,245,255,0.2)'
+        position:'fixed', bottom:'2rem', right:'2rem', zIndex:999,
+        width:'44px', height:'44px', borderRadius:'50%',
+        background:'rgba(0,245,255,0.1)', border:'1px solid rgba(0,245,255,0.4)',
+        color:'#00f5ff', fontSize:'1.2rem', cursor:'pointer',
+        display:'flex', alignItems:'center', justifyContent:'center',
+        backdropFilter:'blur(10px)', transition:'all .2s',
+        boxShadow:'0 0 16px rgba(0,245,255,0.2)'
       }}
       title="Back to top"
     >↑</button>
   ) : null
 }
 
-/* ═══════════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════════ */
 function Footer() {
   return (
     <footer>
