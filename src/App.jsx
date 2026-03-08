@@ -1,5 +1,7 @@
 // App.jsx - Complete Working Version
 import { useState, useEffect, useRef } from 'react'
+import profilePhoto from './assets/Professional persona.png'
+import resumePDF from './assets/Allen_Ronaldo_Resume (1).pdf'
 import './styles.css'
 
 /* ═══════════════════════════════════════════════════
@@ -332,7 +334,7 @@ function Hero() {
         </div>
         <div className="hero-btns">
           <a href="#projects" className="btn btn-cyan">🚀 View Projects</a>
-          <a href="/src/assets/Allen_Ronaldo_Resume%20(1).pdf" className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
+          <a href={resumePDF} className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
           <a href="#contact" className="btn btn-ghost">📬 Contact Me</a>
         </div>
         <div className="hero-pills">
@@ -398,7 +400,7 @@ function About() {
                 <div className="about-photo-inner">
                   {!imageError ? (
                     <img 
-                      src="/src/assets/Professional%20persona.png" 
+                      src={profilePhoto} 
                       alt="Allen Ronaldo C"
                       className="about-photo-img"
                       onError={() => setImageError(true)}
