@@ -332,7 +332,7 @@ function Hero() {
         </div>
         <div className="hero-btns">
           <a href="#projects" className="btn btn-cyan">🚀 View Projects</a>
-          <a href="./assets/Allen_Ronaldo_Resume(1).pdf" className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
+          <a href="/src/assets/Allen_Ronaldo_Resume%20(1).pdf" className="btn btn-outline" target="_blank" rel="noreferrer">📄 Download Resume</a>
           <a href="#contact" className="btn btn-ghost">📬 Contact Me</a>
         </div>
         <div className="hero-pills">
@@ -398,7 +398,7 @@ function About() {
                 <div className="about-photo-inner">
                   {!imageError ? (
                     <img 
-                      src="./assets/1755326708636.jpg" 
+                      src="/src/assets/Professional%20persona.png" 
                       alt="Allen Ronaldo C"
                       className="about-photo-img"
                       onError={() => setImageError(true)}
@@ -431,7 +431,7 @@ function About() {
 
             <div className="about-name-title">
               <h3 className="about-name">AR</h3>
-              <p className="about-role">AI & IoT Engineer</p>
+              <p className="about-role">Your Photo Here</p>
             </div>
 
             <div className="about-info-cards">
@@ -806,7 +806,7 @@ function GitHubStats() {
             </div>
           ))}
         </div>
-        <div className="gh-cta fi"><a href="https://github.com/Allen-Ronaldo-C" className="btn btn-outline" target="_blank" rel="noreferrer">View Full GitHub Profile →</a></div>
+        <div className="gh-cta fi"><a href="https://github.com/allenronaldo" className="btn btn-outline" target="_blank" rel="noreferrer">View Full GitHub Profile →</a></div>
       </div>
     </section>
   )
@@ -863,7 +863,7 @@ function Contact() {
             <p className="contact-blurb">Whether you're building something ambitious, looking for a technical collaborator, or want to explore research — reach out. I respond within 24 hours.</p>
             {['AI & Computer Vision Projects','Embedded Systems & IoT','Research Collaborations','Internships & Industry Exposure','Technical Workshops & Speaking'].map(i=><div key={i} className="contact-interest">{i}</div>)}
             <div className="contact-socials">
-              {[{icon:'🐙',l:'GitHub',v:'@Allen-Ronaldo-C',href:'https://github.com/Allen-Ronaldo-C',c:'#fff'},{icon:'💼',l:'LinkedIn',v:'Allen Ronaldo C',href:'#',c:'#0077b5'},{icon:'📧',l:'Email',v:'allen.ronaldo@rmkcet.ac.in',href:'mailto:allen.ronaldo@rmkcet.ac.in',c:'#00f5ff'}].map(s=>(
+              {[{icon:'🐙',l:'GitHub',v:'@allenronaldo',href:'https://github.com/allenronaldo',c:'#fff'},{icon:'💼',l:'LinkedIn',v:'Allen Ronaldo C',href:'#',c:'#0077b5'},{icon:'📧',l:'Email',v:'allen.ronaldo@rmkcet.ac.in',href:'mailto:allen.ronaldo@rmkcet.ac.in',c:'#00f5ff'}].map(s=>(
                 <a key={s.l} href={s.href} className="contact-social" style={{'--sc':s.c}}>
                   <span className="contact-social-icon">{s.icon}</span>
                   <div><div className="contact-social-lbl">{s.l}</div><div className="contact-social-val">{s.v}</div></div>
@@ -890,34 +890,6 @@ function Contact() {
 /* ═══════════════════════════════════════════════════
    FOOTER
 ═══════════════════════════════════════════════════ */
-
-/* ═══════════════════════════════════════════════════
-   SCROLL TO TOP
-═══════════════════════════════════════════════════ */
-function ScrollToTop() {
-  const [visible, setVisible] = useState(false)
-  useEffect(() => {
-    const h = () => setVisible(window.scrollY > 500)
-    window.addEventListener('scroll', h)
-    return () => window.removeEventListener('scroll', h)
-  }, [])
-  return visible ? (
-    <button
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      style={{
-        position:'fixed', bottom:'2rem', right:'2rem', zIndex:999,
-        width:'44px', height:'44px', borderRadius:'50%',
-        background:'rgba(0,245,255,0.1)', border:'1px solid rgba(0,245,255,0.4)',
-        color:'#00f5ff', fontSize:'1.2rem', cursor:'pointer',
-        display:'flex', alignItems:'center', justifyContent:'center',
-        backdropFilter:'blur(10px)', transition:'all .2s',
-        boxShadow:'0 0 16px rgba(0,245,255,0.2)'
-      }}
-      title="Back to top"
-    >↑</button>
-  ) : null
-}
-
 function Footer() {
   return (
     <footer>
@@ -937,7 +909,7 @@ function Footer() {
           <div>
             <div className="footer-col-lbl">Connect</div>
             <ul className="footer-links">
-              {[['https://github.com/Allen-Ronaldo-C','GitHub'],['#','LinkedIn'],['mailto:allen.ronaldo@rmkcet.ac.in','Email']].map(([h,l])=><li key={l}><a href={h}>{l}</a></li>)}
+              {[['https://github.com/allenronaldo','GitHub'],['#','LinkedIn'],['mailto:allen.ronaldo@rmkcet.ac.in','Email']].map(([h,l])=><li key={l}><a href={h}>{l}</a></li>)}
             </ul>
             <div className="footer-status"><div className="footer-status-dot"/>Open to Opportunities 2025</div>
           </div>
@@ -992,7 +964,6 @@ export default function App() {
             <Contact/>
           </main>
           <Footer/>
-          <ScrollToTop/>
         </>
       )}
     </>
