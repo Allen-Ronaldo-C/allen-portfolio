@@ -808,7 +808,7 @@ function GitHubStats() {
             </div>
           ))}
         </div>
-        <div className="gh-cta fi"><a href="https://github.com/allenronaldo" className="btn btn-outline" target="_blank" rel="noreferrer">View Full GitHub Profile →</a></div>
+        <div className="gh-cta fi"><a href="https://github.com/Allen-Ronaldo-C" className="btn btn-outline" target="_blank" rel="noreferrer">View Full GitHub Profile →</a></div>
       </div>
     </section>
   )
