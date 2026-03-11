@@ -688,7 +688,7 @@ function Education() {
           <div>
             <div className="edu-degree-row">
               <div><div className="edu-college">R.M.K College of Engineering and Technology</div><div className="edu-degree">B.E. Electronics and Communication Engineering</div></div>
-              <div className="edu-year-block"><span className="edu-year">2022 – 2026</span><span className="edu-status">3rd Year</span></div>
+              <div className="edu-year-block"><span className="edu-year">2023 – 2027</span><span className="edu-status">3rd Year</span></div>
             </div>
             <div className="edu-info">
               {[{l:'Affiliated to',v:'Anna University, Chennai'},{l:'Specialization',v:'AI & Embedded Systems'},{l:'Location',v:'Tamil Nadu, India'}].map(i=>(
