@@ -910,7 +910,7 @@ function Footer() {
           <div>
             <div className="footer-col-lbl">Connect</div>
             <ul className="footer-links">
-              {[['https://github.com/Allen-Ronaldo-C','GitHub'],['#','LinkedIn'],['mailto:allen.ronaldo@rmkcet.ac.in','Email']].map(([h,l])=><li key={l}><a href={h}>{l}</a></li>)}
+              {[['https://github.com/Allen-Ronaldo-C','GitHub'],['https://www.linkedin.com/in/allen-ronaldo-c-5a1736293/','LinkedIn'],['mailto:allen.ronaldo@rmkcet.ac.in','Email']].map(([h,l])=><li key={l}><a href={h}>{l}</a></li>)}
             </ul>
             <div className="footer-status"><div className="footer-status-dot"/>Open to Opportunities 2025</div>
           </div>
