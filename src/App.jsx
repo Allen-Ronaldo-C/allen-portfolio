@@ -1,6 +1,6 @@
 // App.jsx - Complete Working Version
 import { useState, useEffect, useRef } from 'react'
-import profilePhoto from './assets/Professional persona.png'
+import profilePhoto from './assets/photo.jpg'
 import resumePDF from './assets/Allen_Ronaldo_Resume (1).pdf'
 import './styles.css'
 
