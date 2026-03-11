@@ -685,7 +685,7 @@ function Education() {
         <p className="label fi">// academic foundation</p>
         <h2 className="heading fi">Education</h2>
         <div className="edu-card fi">
-          <div className="edu-logo">RMKCE</div>
+          <div className="edu-logo">RMKCET</div>
           <div>
             <div className="edu-degree-row">
               <div><div className="edu-college">R.M.K College of Engineering and Technology</div><div className="edu-degree">B.E. Electronics and Communication Engineering</div></div>
