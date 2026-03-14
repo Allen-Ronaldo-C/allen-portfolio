@@ -864,7 +864,7 @@ function Contact() {
             <p className="contact-blurb">Whether you're building something ambitious, looking for a technical collaborator, or want to explore research — reach out. I respond within 24 hours.</p>
             {['AI & Computer Vision Projects','Embedded Systems & IoT','Research Collaborations','Internships & Industry Exposure','Technical Workshops & Speaking'].map(i=><div key={i} className="contact-interest">{i}</div>)}
             <div className="contact-socials">
-              {[{icon:'🐙',l:'GitHub',v:'@Allen-Ronaldo-C',href:'https://github.com/Allen-Ronaldo-C',c:'#fff'},{icon:'💼',l:'LinkedIn',v:'Allen Ronaldo C',href:'#',c:'#0077b5'},{icon:'📧',l:'Email',v:'allen.ronaldo@rmkcet.ac.in',href:'mailto:allen.ronaldo@rmkcet.ac.in',c:'#00f5ff'}].map(s=>(
+              {[{icon:'🐙',l:'GitHub',v:'@Allen-Ronaldo-C',href:'https://github.com/Allen-Ronaldo-C',c:'#fff'},{icon:'💼',l:'LinkedIn',v:'Allen Ronaldo C',href:'https://www.linkedin.com/in/allen-ronaldo-c-5a1736293/',c:'#0077b5'},{icon:'📧',l:'Email',v:'allenxronaldo@gmail.com',href:'mailto:allenxronaldo@gmail.com',c:'#00f5ff'}].map(s=>(
                 <a key={s.l} href={s.href} className="contact-social" style={{'--sc':s.c}}>
                   <span className="contact-social-icon">{s.icon}</span>
                   <div><div className="contact-social-lbl">{s.l}</div><div className="contact-social-val">{s.v}</div></div>
